@@ -1,0 +1,3590 @@
+
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<style type="text/css">
+body {font-family:tahoma;font-size: 12px}
+table {padding:2px;border-spacing:0px;font-family:tahoma;font-size: 12px;border-collapse: collapse}
+input,textarea,Select {font-family:tahoma;font-size: 12px;border-collapse: collapse;}
+.bgc {background-color:#dddddd}
+.bgct {background-color:#FAF082}
+td {text-align:center}
+br {mso-data-placement:same-cell;}
+.list5 {border-top:2px solid #383838;border-bottom:1px solid #e5e5e5;width:100%;border:1px solid #000;}
+.list5 thead th {height:39px;color:#777;font-size:11px;background:#f5f5f5;border-right:1px solid #000;border-bottom:1px solid #e5e5e5;}
+.list5 tbody th, .list5 tbody td {border-right:1px solid #e1e1e1;border-top:1px solid #e1e1e1;text-align:center;height:40px;color:#666;font-size:11px;}
+.list5 tbody .a_l{text-align:left; padding:0 15px; color:#666;}
+.list5 tbody td a.title01 {text-align:left;padding:0 15px;white-space:nowrap;display:block;width:450px; color:#666;overflow:hidden;text-overflow:ellipsis;}
+.list5 tbody td a.title02 {text-align:left;padding:0 15px;white-space:nowrap;display:block;color:#666;overflow:hidden;text-overflow:ellipsis;}
+.list5 tbody .conts01 {text-align:left;padding:10px 10px;}
+.list5 tbody .ta_r {padding:0px 0; text-align:left; line-height:20px;}
+.list5 tbody td a span.comment_num {color:#F44336;font-weight:bold;}
+.list5 tbody td.bold {font-weight:bold;}
+.list5 .check_p{text-align:center;  color:#0000FF; font-weight:bold;}
+
+.list3 {border-top:2px solid #383838;border-bottom:1px solid #e5e5e5;width:100%;}
+.list3 thead th {height:39px;color:#777;font-size:13px;background:#f5f5f5;}
+.list3 tbody th, .list3 tbody td {border-top:1px solid #e1e1e1;text-align:center;color:#666;font-size:13px;}
+.list3 tbody td.conts01 {text-align:left;padding:13px 15px;}
+.list3 tbody td.bold {font-weight:bold;}
+.list3 tbody th {font-weight:normal;}
+.list3 tbody td {border-left:1px solid #e1e1e1;}
+
+.write3{width:100%; border-top:4px solid #383838;}
+.write3 table{width:750px;}
+.write3 th{padding:10px 0;letter-spacing:-1px; font-size:13px; color:#454545;border-bottom:1px solid #e5e5e5; background:#f5f5f5;height:40px;}
+.write3 td{padding:10px 0;border-bottom:1px solid #e5e5e5;text-align:center;vertical-align:middle; font-size:13px;line-height:20px;}
+.write3 input[type=text], input[type=password]{padding:5px 0;border:1px solid #d9d9d9;color:#4d4d4d;}
+.write3 textarea{padding:5px 0;border:1px solid #d9d9d9;color:#4d4d4d;}
+.write3 td input[type=file] {font:normal 13px 'Nanum Gothic', serif, sans-serif;margin-bottom:2px;}
+.write3 td a {color:#666;}
+.write3 input.datepicker{background-color:#F9F8F7;display:inline-block;vertical-align:middle;}
+.write3 td .calendar {display:inline-block;width:30px;height:28px;vertical-align:middle;margin-left:-1px;}
+.write3 .edu_point{text-align:center; color:blue;}
+.write3 .total_p{text-align:center; font-size:20px; color:red; font-weight:bold;}
+.write3 .check_p{text-align:center;  color:#0000FF; font-weight:bold;}
+.list {border-top:2px solid #383838;border-bottom:1px solid #e5e5e5;width:750px;}
+.list thead th {height:39px;color:#777;font-size:13px;background:#f5f5f5;border-right:1px solid #e1e1e1;}
+.list tbody th {border-right:1px solid #e1e1e1;border-top:1px solid #e1e1e1;text-align:center;height:40px;color:#666;font-size:13px;} 
+.list tbody td {border-right:1px solid #e1e1e1;border-top:1px solid #e1e1e1;text-align:center;height:40px;color:#666;font-size:13px;}
+.list tbody .a_l{text-align:left; padding:0 15px; color:#666;}
+.list tbody td a.title01 {text-align:left;padding:0 15px;white-space:nowrap;display:block;width:450px; color:#666;overflow:hidden;text-overflow:ellipsis;}
+.list tbody td a.title02 {text-align:left;padding:0 15px;white-space:nowrap;display:block;color:#666;overflow:hidden;text-overflow:ellipsis;}
+.list tbody .conts01 {text-align:left;padding:10px 10px;}
+.list tbody .ta_r {padding:0px 0; text-align:left; line-height:20px;}
+.list tbody td a span.comment_num {color:#F44336;font-weight:bold;}
+.list tbody td.bold {font-weight:bold;}
+.list .Dend {border-bottom:1px solid #e5e5e5;}
+.list .check_p{text-align:center;  color:#0000FF; font-weight:bold;}
+</style>
+
+</head>
+<body>
+
+								<table style="width:100%;">
+									<!--/*##############################################################################################
+									'-- 헤더부분 고정
+									'##############################################################################################*/-->
+									<tbody><tr>
+										<td>
+											
+											<table class="list">
+												<colgroup>
+													<col width="90">
+													<col width="100">
+													<col width="200">
+													<col width="90">
+													<col width="90">
+													<col width="80">
+													<col width="65">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>									
+														
+														<th>번호</th>
+														<th>업체명</th>
+														<th>매장명</th>
+														<th>사업자번호</th>
+														<th>청구금액</th>
+														<th>CMS등록일</th>
+														<th><legend class="blind">출금일</legend>
+														<select id="due_date" name="due_date" onchange="javascript:document.frm.submit();" style="width:65px;" class="ep_select">
+<option value="">출금일</option>
+<option value="5" selected="">5</option>
+<option value="6">6</option>
+<option value="15">15</option>
+<option value="28">28</option>
+<option value="31">31</option>
+</select>
+														</th>
+														<th><legend class="blind">구분</legend>
+														<select id="part" name="part" onchange="javascript:document.frm.submit();" style="width:65px;" class="ep_select">
+<option value="">구분</option>
+<option value="asp">ASP</option>
+<option value="rental">할부</option>
+<option value="lease">임대</option>
+<option value="rider">배달</option>
+<option value="tableorder">테이블오더</option>
+</select>
+														</th>
+														
+													</tr>
+												</thead>
+											</table>
+										</td>
+									</tr>
+									<!--/*##############################################################################################
+									'-- 바디부분 출력
+									'##############################################################################################*/-->
+									<tr>
+										<td>
+											<div id="disp" style="width: 100%; height: 550px; overflow: auto; position: relative;">
+												<table class="list">
+													<colgroup>
+														
+														<col width="90">
+														<col width="100">
+														<col width="200">
+														<col width="90">
+														<col width="90">
+														<col width="80">
+														<col width="65">
+														<col>
+													</colgroup>
+													<tbody>
+													<tr>
+	<td>337</td>
+	<td>오리엔탈푸드</td>
+	<td><a href="javascript:get_detail('54');">석관동떡볶이 대학로점</a></td>
+	<td>101-13-13429</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2015-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>336</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('658');">페리카나(의정부)</a></td>
+	<td>127-44-87913</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>335</td>
+	<td>키친보리에-대도식당</td>
+	<td><a href="javascript:get_detail('669');">(주)키친보리에-대도식당</a></td>
+	<td>617-85-44860</td>
+	<td class="align_r p_align_r">836,000</td>
+	<td>2016-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>334</td>
+	<td>키친보리에-대도식당</td>
+	<td><a href="javascript:get_detail('2389');">주식회사 삼미</a></td>
+	<td>617-85-47061</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2016-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>333</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('3335');">한스델리 연천전곡점</a></td>
+	<td>127-46-17575</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2014-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>332</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('3343');">한스델리 부여점</a></td>
+	<td>308-07-54511</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2011-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>331</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('3351');">한스델리 전주점</a></td>
+	<td>402-19-78462</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2013-01-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>330</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('3370');">미가헌 인천옥련점(구.한스델리 인천옥련점)</a></td>
+	<td>131-33-65004</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2012-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>329</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('3401');">한스델리 보령점</a></td>
+	<td>313-03-16321</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2014-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>328</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('3434');">한스에브리데이 공주점</a></td>
+	<td>407-06-75005</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2016-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>327</td>
+	<td>루시카토</td>
+	<td><a href="javascript:get_detail('3743');">마리웨일 부산동아대점</a></td>
+	<td>195-21-00211</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2016-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>326</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('4433');">제주클래식</a></td>
+	<td>196-50-00228</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2017-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>325</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('4643');">주식회사 빛솜푸드</a></td>
+	<td>128-86-21307</td>
+	<td class="align_r p_align_r">126,500</td>
+	<td>2022-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>324</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('4870');">아가새농장</a></td>
+	<td>126-29-92410</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2014-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>323</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('4924');">다정혼수</a></td>
+	<td>206-20-79118</td>
+	<td class="align_r p_align_r">5,500</td>
+	<td>2015-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>322</td>
+	<td>루시카토</td>
+	<td><a href="javascript:get_detail('4990');">마리웨일 안산고잔점</a></td>
+	<td>154-03-00268</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2016-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>321</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('4999');">정통중화요리남궁(일산)</a></td>
+	<td>128-01-40933</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2016-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>320</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5581');">봉구스밥버거 명지대점(메타)</a></td>
+	<td>449-46-00106</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>319</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5584');">봉구스밥버거 평택송화점(메타)</a></td>
+	<td>125-24-26305</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>318</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5625');">봉구스밥버거 오송점(메타)</a></td>
+	<td>317-05-21631</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>317</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5674');">봉구스밥버거 사우점(메타)</a></td>
+	<td>137-20-92741</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-05-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>316</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5691');">봉구스밥버거 원통점</a></td>
+	<td>223-04-61739</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>315</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5706');">봉구스밥버거 복자여고점(메타)</a></td>
+	<td>312-30-87474</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>314</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5724');">봉구스밥버거 광양중동점(메타)</a></td>
+	<td>416-17-80906</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2024-10-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>313</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5725');">봉구스밥버거 금호점(메타)</a></td>
+	<td>410-30-43974</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2024-10-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>312</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5726');">봉구스밥버거 남천역점(메타)</a></td>
+	<td>617-36-65019</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>311</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5761');">봉구스밥버거 연무대점(메타)</a></td>
+	<td>512-17-81222</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>310</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5772');">봉구스밥버거 광주역점(구.전남대정문)</a></td>
+	<td>409-25-15718</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>309</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5811');">봉구스밥버거 잠실새내역점(메타)</a></td>
+	<td>120-05-40131</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>308</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5833');">봉구스밥버거 송파점(메타)</a></td>
+	<td>317-57-00052</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>307</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('5893');">봉구스밥버거 속초교동점(메타)</a></td>
+	<td>227-06-57395</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>306</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('5941');">안동장터국밥 창원신월점</a></td>
+	<td>374-07-00915</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2018-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>305</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6123');">봉구스밥버거 조례점(메타)</a></td>
+	<td>416-17-89192</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>304</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6174');">봉구스밥버거 기흥구청점(메타)</a></td>
+	<td>892-63-00286</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>303</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6192');">봉구스밥버거 청주대점(메타)</a></td>
+	<td>317-04-67488</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>302</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6247');">봉구스밥버거 용인명지대점(메타)</a></td>
+	<td>142-08-38922</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>301</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6346');">봉구스밥버거 충북진천점(메타)</a></td>
+	<td>301-31-81536</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>300</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6368');">훌랄라치킨 거창1점</a></td>
+	<td>611-05-49341</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>299</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6399');">훌랄라참숯바베큐치킨 청전1점(제천)</a></td>
+	<td>304-09-67338</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>298</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6406');">훌랄라참숯바배큐치킨 취암1점</a></td>
+	<td>308-04-57161</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>297</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6428');">훌랄라숯불치킨 증평1점</a></td>
+	<td>301-24-98460</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-05-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>296</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6440');">훌랄라숯불치킨 정왕5점</a></td>
+	<td>140-11-22569</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>295</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6442');">훌랄라숯불치킨 하상1점</a></td>
+	<td>123-18-53197</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>294</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6461');">맛데이 매탄2동점</a></td>
+	<td>135-28-14333</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>293</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6479');">훌랄라숯불치킨 궐동서진점</a></td>
+	<td>124-25-57082</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-10-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>292</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6511');">훌랄라참숯바베큐치킨 정자3점</a></td>
+	<td>135-26-57610</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>291</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6517');">훌랄라참숯밥베큐치킨 향남2점</a></td>
+	<td>123-34-26900</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>290</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6554');">훌랄라참숯바베큐치킨 구로1점</a></td>
+	<td>118-01-92981</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>289</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('6556');">훌랄라참숯바베큐치킨 당산역점</a></td>
+	<td>107-17-48512</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>288</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6590');">봉구스밥버거 도당점(메타)</a></td>
+	<td>753-30-00080</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>287</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6591');">봉구스밥버거 이천관고점(메타)</a></td>
+	<td>408-62-00013</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>286</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('6731');">봉구스밥버거 영월중앙로점</a></td>
+	<td>810-03-00238</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-05-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>285</td>
+	<td>(주)더맛에프디</td>
+	<td><a href="javascript:get_detail('6855');">더맛쪽갈비 세류점</a></td>
+	<td>124-13-96971</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2018-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>284</td>
+	<td>커피톤야</td>
+	<td><a href="javascript:get_detail('6876');">프레쉬로스터 커피톤야코리아</a></td>
+	<td>716-88-00966</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2018-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>283</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('7309');">홍춘천치즈닭갈비 복현점(대구)</a></td>
+	<td>690-61-00158</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2019-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>282</td>
+	<td>고칸</td>
+	<td><a href="javascript:get_detail('7423');">고칸 수원아주대점</a></td>
+	<td>207-18-62733</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2019-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>281</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('7435');">봉구스밥버거 동탄북광장점(메타)</a></td>
+	<td>135-31-40447</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>280</td>
+	<td>(주)한경</td>
+	<td><a href="javascript:get_detail('7443');">치치 춘천애막골점</a></td>
+	<td>703-64-00324</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2019-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>279</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('7656');">홍춘천치즈닭갈비 광양중동점</a></td>
+	<td>427-01-01614</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2019-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>278</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('7765');">훌랄라숯불치킨 인제대역점</a></td>
+	<td>606-35-35181</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2019-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>277</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('7777');">훌랄라숯불치킨 성환1점</a></td>
+	<td>305-70-23406</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2019-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>276</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('7901');">봉구스밥버거 혁신유곡점(메타)</a></td>
+	<td>304-14-61167</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>275</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('7954');">안동장터국밥 시흥시화점</a></td>
+	<td>134-20-09578</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2019-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>274</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('8057');">봉구스밥버거 서신점(메타)</a></td>
+	<td>402-22-35916</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>273</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('8064');">봉구스밥버거 성정점(메타)</a></td>
+	<td>535-47-00103</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>272</td>
+	<td>주식회사 브롱스</td>
+	<td><a href="javascript:get_detail('8187');">브롱스 수원망포역점</a></td>
+	<td>494-08-01253</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>271</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('8245');">봉구스밥버거 불당2호점(메타)</a></td>
+	<td>651-13-01132</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2025-01-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>270</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('8489');">에그셀런트 금호점</a></td>
+	<td>420-13-01178</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2020-01-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>269</td>
+	<td>(주)아이센스푸드</td>
+	<td><a href="javascript:get_detail('8566');">치킨의민족 제천점</a></td>
+	<td>210-35-41560</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2019-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>268</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('8864');"><font color="red">[폐점]</font>봉구스밥버거 수지구청점(메타)</a></td>
+	<td>124-44-59887</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2020-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>267</td>
+	<td>아담스꼬마김밥</td>
+	<td><a href="javascript:get_detail('9057');">아담스서울꼬마김밥 문정점</a></td>
+	<td>555-23-01148</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2020-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>266</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('9122');">에그셀런트 울산성남점</a></td>
+	<td>848-19-01117</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2020-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>265</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('9149');">봉구스밥버거 아현점(메타)</a></td>
+	<td>105-21-30731</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2020-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>264</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('9332');">봉구스밥버거 대구진천점(메타)</a></td>
+	<td>208-42-04750</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>263</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('9334');">봉구스밥버거 까치산점(메타)</a></td>
+	<td>231-25-00058</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2020-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>262</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('9376');">봉구스밥버거 수원경희대점(메타)</a></td>
+	<td>142-08-38918</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2020-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>261</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('9646');">에그셀런트 위례신도시점</a></td>
+	<td>205-11-65114</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2020-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>260</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('9692');">얼맥당 방학점</a></td>
+	<td>334-29-00715</td>
+	<td class="align_r p_align_r">44,000</td>
+	<td>2020-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>259</td>
+	<td>VAN</td>
+	<td><a href="javascript:get_detail('10089');">S셀독24스터디카페 울산장검점</a></td>
+	<td>885-25-01174</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>258</td>
+	<td>VAN</td>
+	<td><a href="javascript:get_detail('10152');">S우행공스터디카페 인천귤현점</a></td>
+	<td>879-70-00355</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2021-01-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>257</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('10259');">S셀독24스터디카페 포항양덕점</a></td>
+	<td>845-78-00299</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>256</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10324');">담꾹 부천송내점</a></td>
+	<td>246-01-02090</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>255</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('10425');">봉구스밥버거 진영점(메타)</a></td>
+	<td>201-55-00092</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>254</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('10431');">안동장터국밥 당진읍내점</a></td>
+	<td>137-08-45396</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2021-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>253</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('10496');">에그셀런트 동해천곡점</a></td>
+	<td>799-49-00579</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2021-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>252</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10666');">담꾹 월계점</a></td>
+	<td>690-06-02201</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>251</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10676');">담꾹 장안삼거리점</a></td>
+	<td>565-28-01077</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>250</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10679');">담꾹 북마산점</a></td>
+	<td>799-07-01753</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>249</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('10683');">봉구스밥버거 고려대점</a></td>
+	<td>564-07-00255</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>248</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10693');">담꾹 포항이동점</a></td>
+	<td>211-24-61845</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>247</td>
+	<td>설레족발</td>
+	<td><a href="javascript:get_detail('10717');">설레족발 용인유림점</a></td>
+	<td>816-13-01568</td>
+	<td class="align_r p_align_r">44,000</td>
+	<td>2021-05-05</td>
+	<td>5</td>
+	<td>임대</td>
+</tr>
+<tr>
+	<td>246</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10945');">담꾹 포항초곡점</a></td>
+	<td>487-05-02078</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>245</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('10960');">담꾹 익산부송점</a></td>
+	<td>734-16-01331</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>244</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('10997');">훌랄라참숯바베큐 선부2동점</a></td>
+	<td>211-36-07975</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2021-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>243</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11039');">담꾹 창원북면점</a></td>
+	<td>739-57-00572</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>242</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11057');">담꾹 마산호계점</a></td>
+	<td>896-12-01757</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>241</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('11071');">돈독(구.회춘 해운대점)</a></td>
+	<td>885-35-00946</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2021-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>240</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11270');">담꾹 문산당동점</a></td>
+	<td>708-03-02156</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>239</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11371');">담꾹 함안가야점</a></td>
+	<td>304-60-00605</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>238</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11418');">담꾹 대전목동점</a></td>
+	<td>334-41-00871</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>237</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('11440');">봉구스밥버거 평택이충점</a></td>
+	<td>125-24-12780</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>236</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('11442');">봉구스밥버거 양주옥정점</a></td>
+	<td>533-06-02140</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>235</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11467');"><font color="red">[폐점]</font>담꾹 철원와수점</a></td>
+	<td>471-18-01526</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>234</td>
+	<td>(주)예스아이엠패밀리</td>
+	<td><a href="javascript:get_detail('11474');">대단한갈비 수원인계점</a></td>
+	<td>738-64-00510</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2021-09-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>233</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11745');">담꾹 안양샘마을점</a></td>
+	<td>727-25-01301</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>232</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('11846');">담꾹 중화역점</a></td>
+	<td>557-78-00301</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2021-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>231</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('12307');">담꾹 은평신사점</a></td>
+	<td>375-50-00608</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>230</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('12346');">안동장터국밥 파주사임당로점</a></td>
+	<td>130-09-40285</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2022-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>229</td>
+	<td>금커피박빙수</td>
+	<td><a href="javascript:get_detail('12511');">금커피별빙수 화정점</a></td>
+	<td>760-46-00696</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2022-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>228</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('12603');">담꾹 구리아름마을점</a></td>
+	<td>858-12-01721</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>227</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('12617');">수작카츠 마곡점</a></td>
+	<td>787-61-00485</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>226</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('12619');">대단한커피 양주광적점</a></td>
+	<td>118-18-01718</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2022-05-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>225</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('12630');">담꾹 동해시청점</a></td>
+	<td>850-22-01653</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>224</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('12686');">홍춘천치즈닭갈비 봉무점</a></td>
+	<td>108-26-63371</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2022-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>223</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('12872');">담꾹 의정부민락점</a></td>
+	<td>145-67-00475</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>222</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('12940');">강릉해물떡볶이(구.에그셀런트 강릉대학로점)</a></td>
+	<td>760-61-00011</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2022-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>221</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('13184');">S새빛스터디카페</a></td>
+	<td>441-25-01673</td>
+	<td class="align_r p_align_r">55,000</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>220</td>
+	<td>(주)레드애플</td>
+	<td><a href="javascript:get_detail('13275');">레드애플 고양덕은점</a></td>
+	<td>882-36-00997</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2022-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>219</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('13284');">홍춘천치즈닭갈비 도안가수원점</a></td>
+	<td>897-23-01528</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2022-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>218</td>
+	<td>한울프랜차이즈</td>
+	<td><a href="javascript:get_detail('13294');">이선생짜글이 장곡점</a></td>
+	<td>155-09-01199</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>217</td>
+	<td>(주)오니규</td>
+	<td><a href="javascript:get_detail('13309');">오니기리와이규동 대전장대점</a></td>
+	<td>149-48-00893</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>216</td>
+	<td>주식회사 브롱스</td>
+	<td><a href="javascript:get_detail('13314');">브롱스 문정점</a></td>
+	<td>577-23-01624</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>215</td>
+	<td>(주)레드애플</td>
+	<td><a href="javascript:get_detail('13359');">레드애플 강남파이낸스센터점</a></td>
+	<td>430-85-02074</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2022-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>214</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('13390');">에그셀런트 영등포점</a></td>
+	<td>690-10-01999</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>213</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('13402');">에그셀런트 포항두호점</a></td>
+	<td>807-05-02724</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>212</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('13405');">오복수산 연남점</a></td>
+	<td>508-10-66145</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>211</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('13408');">S우행공스터디카페 용인마북점</a></td>
+	<td>867-07-02263</td>
+	<td class="align_r p_align_r">55,000</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>210</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('13427');">보배반점 세종나성점</a></td>
+	<td>644-22-01645</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>209</td>
+	<td>오리엔탈푸드</td>
+	<td><a href="javascript:get_detail('13432');">석관동떡볶이 원주단구점</a></td>
+	<td>470-04-02786</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>208</td>
+	<td>(주)캔즈코리아</td>
+	<td><a href="javascript:get_detail('13442');"><font color="red">[폐점]</font>슬기로운맥주창고 영월점</a></td>
+	<td>803-15-02115</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>207</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('13443');">보배반점 천안두정점</a></td>
+	<td>554-27-01478</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>206</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('13444');">보배반점 수원망포점</a></td>
+	<td>593-10-01738</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>205</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('13460');">담꾹 영덕영해점</a></td>
+	<td>515-47-00977</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2022-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>204</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('13704');">S그로잉스터디카페 강릉점</a></td>
+	<td>195-01-00187</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>203</td>
+	<td>주식회사 지강기획</td>
+	<td><a href="javascript:get_detail('13766');">무탄 코엑스점</a></td>
+	<td>612-85-23119</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2023-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>202</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('13980');">봉구스밥버거 구래점</a></td>
+	<td>306-26-52463</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>201</td>
+	<td>금커피박빙수</td>
+	<td><a href="javascript:get_detail('13983');"><font color="red">[폐점]</font>금커피별빙수 사가정역점</a></td>
+	<td>471-18-01865</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>200</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('13989');">봉구스밥버거 경기과기대점</a></td>
+	<td>545-10-02645</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2018-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>199</td>
+	<td>회장님댁</td>
+	<td><a href="javascript:get_detail('14168');">회장님댁 포항영일대점</a></td>
+	<td>565-75-00408</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2023-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>198</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('14426');">담꾹 용인민속마을점</a></td>
+	<td>283-09-02396</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>197</td>
+	<td>(주)정직한</td>
+	<td><a href="javascript:get_detail('14443');">벤티프레소 장곡점</a></td>
+	<td>221-37-10867</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>196</td>
+	<td>주식회사유후컴퍼니</td>
+	<td><a href="javascript:get_detail('14448');">감자골</a></td>
+	<td>774-38-01404</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>195</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('14454');"><font color="red">[폐점]</font>보배반점 공덕점</a></td>
+	<td>796-58-00723</td>
+	<td class="align_r p_align_r">374,000</td>
+	<td>2023-07-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>194</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('14460');">봉구스밥버거 송촌2호점</a></td>
+	<td>786-21-00171</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2023-07-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>193</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('14561');">담꾹 대전내동점</a></td>
+	<td>383-02-02931</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>192</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('14565');">스시사쿠 인하대역점</a></td>
+	<td>456-40-00932</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>191</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('14574');">담꾹 고양도래울점</a></td>
+	<td>307-11-73263</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>190</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('14587');">에그존&amp;그린스미스 진주공군교육사령부점</a></td>
+	<td>860-15-01953</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>189</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('14588');"><font color="red">[폐점]</font>담꾹 군산조촌점</a></td>
+	<td>790-43-01036</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>188</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('14589');">이모분식</a></td>
+	<td>203-03-95617</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>187</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('14596');">봉구스밥버거 광교점</a></td>
+	<td>107-41-83891</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>186</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('14608');">얼맥당 성남도촌점</a></td>
+	<td>163-27-01495</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>185</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('14631');"><font color="red">[폐점]</font>담꾹 광교웰빙타운점</a></td>
+	<td>502-37-18190</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>184</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('14634');">얼맥당 야당점</a></td>
+	<td>340-11-02178</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>183</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('14643');"><font color="red">[폐점]</font>대단한탕후루 덕천점</a></td>
+	<td>291-42-01094</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>182</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('14680');">보배반점 충장점</a></td>
+	<td>293-22-01791</td>
+	<td class="align_r p_align_r">224,400</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>181</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('14687');">보배반점 광교법원점</a></td>
+	<td>269-15-02182</td>
+	<td class="align_r p_align_r">261,800</td>
+	<td>2023-08-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>180</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('14846');">보배반점 원주점</a></td>
+	<td>670-69-00510</td>
+	<td class="align_r p_align_r">392,700</td>
+	<td>2023-09-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>179</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('14894');">한스델리 포항중앙점</a></td>
+	<td>208-10-78547</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>178</td>
+	<td>회장님댁</td>
+	<td><a href="javascript:get_detail('15099');">회장님댁 성남점</a></td>
+	<td>561-24-01515</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>177</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('15104');">안동국밥곰탕 청주오창점</a></td>
+	<td>789-27-01598</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>176</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('15125');">밀양돼지국밥(구.이선생짜글이)</a></td>
+	<td>205-06-93839</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>175</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('15132');">주식회사 라운지플래닛</a></td>
+	<td>677-81-03145</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>174</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('15161');">사실빙 군산대점(구.대단한탕후루 군산대점)</a></td>
+	<td>250-26-01623</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>173</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('15165');">훌랄라참숯치킨 주례점</a></td>
+	<td>778-29-01078</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>172</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('15173');">봉구스밥버거 소명여고점</a></td>
+	<td>370-41-01240</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>171</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('15193');">대단한탕후루 청주방서점</a></td>
+	<td>419-05-02885</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>170</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('15198');">대단한탕후루 울산매곡점</a></td>
+	<td>322-24-01870</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>169</td>
+	<td>한울프랜차이즈</td>
+	<td><a href="javascript:get_detail('15200');">이선생짜글이 독산점</a></td>
+	<td>616-35-01295</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>168</td>
+	<td>타코익스프레스</td>
+	<td><a href="javascript:get_detail('15202');">스내킹타코 장안동점</a></td>
+	<td>528-57-00797</td>
+	<td class="align_r p_align_r">188,100</td>
+	<td>2024-05-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>167</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('15203');">봉구스밥버거 역삼삼일점</a></td>
+	<td>177-23-01759</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>166</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('15207');">보배반점 온산점</a></td>
+	<td>282-36-01143</td>
+	<td class="align_r p_align_r">243,100</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>165</td>
+	<td>주식회사 브롱스</td>
+	<td><a href="javascript:get_detail('15208');">브롱스 동탄남광장점</a></td>
+	<td>640-04-03083</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>164</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('15218');">스시사쿠 센트럴파크점</a></td>
+	<td>618-21-15110</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>163</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('15221');">수작카츠 원주점</a></td>
+	<td>485-54-00674</td>
+	<td class="align_r p_align_r">240,900</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>162</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('15223');">리숨두부(대웅제약)</a></td>
+	<td>603-15-93582</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>161</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('15228');">온가솥밥(대웅제약)</a></td>
+	<td>267-43-00935</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>160</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('15229');">윤쓰패밀리(대웅제약)</a></td>
+	<td>645-03-01934</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>159</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('15237');">에이플러스와플토스트</a></td>
+	<td>336-08-02354</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>158</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('15243');">장인닭갈비 불당점</a></td>
+	<td>711-26-01623</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>157</td>
+	<td>설레족발</td>
+	<td><a href="javascript:get_detail('15244');">설레족발 향동점</a></td>
+	<td>497-26-01784</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>156</td>
+	<td>(주)153패밀리</td>
+	<td><a href="javascript:get_detail('15255');">강릉장칼 용인역북점</a></td>
+	<td>185-73-00552</td>
+	<td class="align_r p_align_r">287,100</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>155</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('15258');"><font color="red">[폐점]</font>대단한탕후루&amp;대단한커피 유천태평점</a></td>
+	<td>602-19-52529</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>154</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('15264');">대단한탕후루 개금가야점</a></td>
+	<td>512-20-15061</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-11-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>153</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('15400');">훌랄라치킨 김량장점</a></td>
+	<td>106-22-92042</td>
+	<td class="align_r p_align_r">187,000</td>
+	<td>2024-02-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>152</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('15405');">S셀독24스터디카페 광주첨단2지구점</a></td>
+	<td>756-05-02896</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>151</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('15412');">S우행공스터디카페 목동힐스테이트점</a></td>
+	<td>433-03-03101</td>
+	<td class="align_r p_align_r">55,000</td>
+	<td>2026-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>150</td>
+	<td>훈돈에프앤비</td>
+	<td><a href="javascript:get_detail('15431');"><font color="red">[폐점]</font>훈훈돈까스</a></td>
+	<td>533-05-03031</td>
+	<td class="align_r p_align_r">233,200</td>
+	<td>2023-12-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>149</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('15455');">보배반점 청주가경점</a></td>
+	<td>250-44-00837</td>
+	<td class="align_r p_align_r">294,800</td>
+	<td>2023-12-05</td>
+	<td>5</td>
+	<td>테이블오더/임대</td>
+</tr>
+<tr>
+	<td>148</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('15570');">하하족발</a></td>
+	<td>315-07-72458</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2023-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>147</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('15572');">훌랄라치킨 고양화정점</a></td>
+	<td>117-13-35883</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2023-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>146</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('15751');">홍춘천닭갈비&amp;부대찌개 와동점</a></td>
+	<td>871-65-00357</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>145</td>
+	<td>고피자</td>
+	<td><a href="javascript:get_detail('15805');">고피자 충남대점</a></td>
+	<td>498-52-00773</td>
+	<td class="align_r p_align_r">110,000</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>144</td>
+	<td>고피자</td>
+	<td><a href="javascript:get_detail('15834');">고피자 방이역점</a></td>
+	<td>534-19-02013</td>
+	<td class="align_r p_align_r">110,000</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>143</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('15845');"><font color="red">[폐점]</font>뚜껑댁</a></td>
+	<td>862-47-00382</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>142</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('15882');">훌랄라치킨 일동점</a></td>
+	<td>134-05-33231</td>
+	<td class="align_r p_align_r">66,000</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>141</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('15889');">샐러드박스 대웅제약점</a></td>
+	<td>139-05-08682</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>140</td>
+	<td>(주)정직한</td>
+	<td><a href="javascript:get_detail('15899');">벤티프레소 숭례문점</a></td>
+	<td>647-19-02041</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>139</td>
+	<td>주식회사유후컴퍼니</td>
+	<td><a href="javascript:get_detail('15900');">왕빈자전통주막 조촌점</a></td>
+	<td>396-18-02277</td>
+	<td class="align_r p_align_r">134,200</td>
+	<td>2024-04-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>138</td>
+	<td>고피자</td>
+	<td><a href="javascript:get_detail('16050');">고피자 연신내점</a></td>
+	<td>848-85-02329</td>
+	<td class="align_r p_align_r">110,000</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>137</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16083');">갓잇 광교아브뉴프랑점</a></td>
+	<td>141-43-01326</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>136</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('16087');">울엄마해장 진천덕산점</a></td>
+	<td>850-34-01582</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>135</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16089');">훌랄라치킨 아산용화점</a></td>
+	<td>816-25-01862</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>134</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('16092');">담꾹 화천점</a></td>
+	<td>404-11-68120</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>133</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16093');">갓잇 송파아이파크점</a></td>
+	<td>224-74-00500</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>132</td>
+	<td>차알 주식회사</td>
+	<td><a href="javascript:get_detail('16114');">차알 가산리퍼블릭점</a></td>
+	<td>610-86-36686</td>
+	<td class="align_r p_align_r">315,700</td>
+	<td>2024-06-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>131</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('16139');">간빠이 서울숲점</a></td>
+	<td>473-53-00922</td>
+	<td class="align_r p_align_r">203,500</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>130</td>
+	<td>(주)올바른</td>
+	<td><a href="javascript:get_detail('16154');">올바른스포츠 제주오라점</a></td>
+	<td>136-27-01625</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>129</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('16158');">안동국밥곰탕 미성점</a></td>
+	<td>643-06-00911</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>128</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16159');">갓잇 위례점</a></td>
+	<td>842-81-03604</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>127</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16164');">훌랄라치킨 안양예술공원점</a></td>
+	<td>340-31-01240</td>
+	<td class="align_r p_align_r">66,000</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>126</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('16170');">보배반점 경북도청점</a></td>
+	<td>862-52-00896</td>
+	<td class="align_r p_align_r">205,700</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>125</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('16182');"><font color="red">[폐점]</font>대단한돈까스 신평점</a></td>
+	<td>236-40-01230</td>
+	<td class="align_r p_align_r">92,730</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>124</td>
+	<td>피자플렉스</td>
+	<td><a href="javascript:get_detail('16191');">피자플렉스 범어직영점</a></td>
+	<td>510-14-52400</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>123</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16217');">고려통닭 시흥장곡점</a></td>
+	<td>349-57-00627</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>122</td>
+	<td>금커피박빙수</td>
+	<td><a href="javascript:get_detail('16285');">금커피별빙수 전주인후점</a></td>
+	<td>246-31-01666</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>배달/ASP</td>
+</tr>
+<tr>
+	<td>121</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('16288');">대단한탕후루 당진기지시점</a></td>
+	<td>558-25-01869</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>120</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('16289');">간빠이 길동점</a></td>
+	<td>706-57-00626</td>
+	<td class="align_r p_align_r">133,100</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>119</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('16292');">대단한갈비 제주용담점</a></td>
+	<td>388-23-01795</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>118</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('16293');">안동국밥곰탕 시화MTV점</a></td>
+	<td>497-33-01555</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>117</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('16297');">장인닭갈비 진월점</a></td>
+	<td>337-01-03319</td>
+	<td class="align_r p_align_r">60,500</td>
+	<td>2024-08-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>116</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('16314');">영블리(구.벤티프레소 대전목동점)</a></td>
+	<td>332-12-02489</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>115</td>
+	<td>배상면주가</td>
+	<td><a href="javascript:get_detail('16395');">느린마을양조장 동탄목동점</a></td>
+	<td>725-24-01841</td>
+	<td class="align_r p_align_r">66,000</td>
+	<td>2024-09-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>114</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16398');">샌드리아 충북혁신도시점</a></td>
+	<td>658-55-00963</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-09-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>113</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('16580');">한스델리 동해점</a></td>
+	<td>567-33-01489</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>112</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16593');">갓잇 한남점</a></td>
+	<td>235-47-01027</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>111</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('16595');">봉구스밥버거 공업탑점</a></td>
+	<td>677-56-00582</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>110</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('16625');">하하아이스365</a></td>
+	<td>478-54-00943</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>109</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('16626');">하이맥주</a></td>
+	<td>897-07-02769</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>108</td>
+	<td>주식회사유후컴퍼니</td>
+	<td><a href="javascript:get_detail('16634');">와코타코 화랑대점</a></td>
+	<td>862-16-02561</td>
+	<td class="align_r p_align_r">73,700</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>107</td>
+	<td>주식회사 죽이야기</td>
+	<td><a href="javascript:get_detail('16644');">죽이야기 서천점</a></td>
+	<td>138-47-01202</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>106</td>
+	<td>(주)빛솜푸드</td>
+	<td><a href="javascript:get_detail('16656');">안동국밥곰탕 청주내수점</a></td>
+	<td>895-29-01771</td>
+	<td class="align_r p_align_r">60,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>105</td>
+	<td>다이닝팩토리</td>
+	<td><a href="javascript:get_detail('16657');">장인닭갈비 창원상남점</a></td>
+	<td>313-41-01140</td>
+	<td class="align_r p_align_r">71,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>104</td>
+	<td>이에스푸드</td>
+	<td><a href="javascript:get_detail('16663');">최순옥명품국밥 창동점</a></td>
+	<td>769-41-01213</td>
+	<td class="align_r p_align_r">101,200</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>103</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('16667');">보배반점 김해내외점</a></td>
+	<td>562-38-01271</td>
+	<td class="align_r p_align_r">355,300</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>102</td>
+	<td>무쇠뚝삼겹</td>
+	<td><a href="javascript:get_detail('16676');">무쇠뚝삼겹 신흥역점</a></td>
+	<td>211-49-81280</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>101</td>
+	<td>(주)153패밀리</td>
+	<td><a href="javascript:get_detail('16677');"><font color="red">[폐점]</font>강릉장칼 지곡점</a></td>
+	<td>153-01-03327</td>
+	<td class="align_r p_align_r">44,000</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>100</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('16679');">담꾹 대전판암점</a></td>
+	<td>885-53-00839</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>99</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('16682');">대단한돈까스 계명대점</a></td>
+	<td>495-42-00912</td>
+	<td class="align_r p_align_r">147,180</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>98</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16684');">훌랄라치킨 수원망포1점</a></td>
+	<td>540-19-01611</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>97</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('16690');">대단한돈까스 소래포구역점</a></td>
+	<td>112-04-36769</td>
+	<td class="align_r p_align_r">136,290</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>96</td>
+	<td>서영에프앤비</td>
+	<td><a href="javascript:get_detail('16691');"><font color="red">[폐점]</font>육회야문연어 부천소사점</a></td>
+	<td>353-32-01729</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>95</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('16693');">봉구스밥버거 언양점</a></td>
+	<td>413-52-00957</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>94</td>
+	<td>(주)정직한</td>
+	<td><a href="javascript:get_detail('16697');">벤티프레소 장현지구점</a></td>
+	<td>249-17-02412</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>93</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16699');">갓잇 분당야탑점</a></td>
+	<td>516-14-02801</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2024-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>92</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16849');">갓잇 구리수택점</a></td>
+	<td>765-10-02797</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>91</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('16903');">울엄마양평해장국 강원강릉점</a></td>
+	<td>586-15-01230</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>90</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('16904');">울엄마해장 충북영동점</a></td>
+	<td>305-47-19753</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>89</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16910');"><font color="red">[폐점]</font>안심쌀통닭 영도동삼점</a></td>
+	<td>205-53-01013</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-03-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>88</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16915');">갓잇 평택소사벌점</a></td>
+	<td>836-33-01269</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>87</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16916');">훌랄라치킨 미금역점</a></td>
+	<td>129-25-21463</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2025-03-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>86</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('16918');">훌랄라치킨 김포운양점</a></td>
+	<td>429-17-01213</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-03-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>85</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('16920');">울엄마양평해장국 대전괴정점</a></td>
+	<td>490-23-00823</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>84</td>
+	<td>배상면주가</td>
+	<td><a href="javascript:get_detail('16921');">느린마을양조장 부산해운대센텀점</a></td>
+	<td>591-52-01144</td>
+	<td class="align_r p_align_r">71,500</td>
+	<td>2025-03-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>83</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('16927');">울엄마양평해장국 경북가야점</a></td>
+	<td>640-27-00407</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>82</td>
+	<td>(주)올바른</td>
+	<td><a href="javascript:get_detail('16939');">올바른스포츠 방배점</a></td>
+	<td>484-45-00534</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>81</td>
+	<td>(주)올바른</td>
+	<td><a href="javascript:get_detail('16949');">올바른스포츠 포천신북점</a></td>
+	<td>459-16-02249</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>80</td>
+	<td>주식회사 라라컴퍼니</td>
+	<td><a href="javascript:get_detail('16955');">포에버마이펫 화성동탄점</a></td>
+	<td>508-11-99982</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>79</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('16967');">담뿍유부</a></td>
+	<td>178-10-02843</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>78</td>
+	<td>베브릿지</td>
+	<td><a href="javascript:get_detail('16970');">베브릿지 공주점</a></td>
+	<td>730-16-02420</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>77</td>
+	<td>피자플렉스</td>
+	<td><a href="javascript:get_detail('16971');">피자플렉스 경산점</a></td>
+	<td>511-28-01838</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>76</td>
+	<td>주식회사 티에이</td>
+	<td><a href="javascript:get_detail('16973');">타타스베이글 경북성주점</a></td>
+	<td>710-50-01135</td>
+	<td class="align_r p_align_r">44,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>75</td>
+	<td>금커피박빙수</td>
+	<td><a href="javascript:get_detail('16974');">금커피별빙수 천안신부점</a></td>
+	<td>594-43-01194</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>74</td>
+	<td>주식회사 우기식당</td>
+	<td><a href="javascript:get_detail('16984');">우기식당 서울대입구점</a></td>
+	<td>201-26-67905</td>
+	<td class="align_r p_align_r">200,200</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>73</td>
+	<td>고칸</td>
+	<td><a href="javascript:get_detail('16986');">고칸 오산점</a></td>
+	<td>143-28-01955</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>72</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('16989');">얼맥당 군자점</a></td>
+	<td>209-26-95012</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>71</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16990');">갓잇 김포구래점</a></td>
+	<td>619-03-33970</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>70</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('16991');">갓잇 동탄목동점</a></td>
+	<td>550-10-02967</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>69</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('16992');">얼맥당 천안두정점</a></td>
+	<td>545-02-03367</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-04-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>68</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17044');">울엄마양평해장국 대전가양점</a></td>
+	<td>305-32-53325</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>67</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('17080');">쇼부라멘 대웅제약점</a></td>
+	<td>733-22-02264</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>66</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17089');">울엄마양평해장국 고현점</a></td>
+	<td>110-25-62252</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2025-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>65</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17098');">울엄마양평해장국 경북성주점</a></td>
+	<td>872-58-00124</td>
+	<td class="align_r p_align_r">52,800</td>
+	<td>2025-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>64</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('17138');">간빠이 안산반달섬점</a></td>
+	<td>502-41-51497</td>
+	<td class="align_r p_align_r">154,000</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>63</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('17144');">간빠이 천안원성점</a></td>
+	<td>559-16-02535</td>
+	<td class="align_r p_align_r">93,500</td>
+	<td>2025-06-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>62</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17147');">치포치킨</a></td>
+	<td>549-14-02631</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2025-06-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>61</td>
+	<td>스터디카페</td>
+	<td><a href="javascript:get_detail('17210');">건후스터디카페 신림센터본점</a></td>
+	<td>704-02-03495</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>60</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17219');"><font color="red">[폐점]</font>제주한족</a></td>
+	<td>649-12-02918</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>59</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17222');">안심쌀통닭 남외해오름점</a></td>
+	<td>742-28-01811</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>58</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17228');">침샘족발 강서본점</a></td>
+	<td>224-88-03353</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>57</td>
+	<td>(주)삼교리</td>
+	<td><a href="javascript:get_detail('17232');">삼교리동치미막국수 가평점</a></td>
+	<td>120-17-91104</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>56</td>
+	<td>주식회사 우기식당</td>
+	<td><a href="javascript:get_detail('17238');">우기식당 연신내점</a></td>
+	<td>136-52-01006</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>55</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17241');">학교앞떡볶이</a></td>
+	<td>843-01-03361</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-07-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>54</td>
+	<td>(주)153패밀리</td>
+	<td><a href="javascript:get_detail('17386');"><font color="red">[폐점]</font>강릉장칼앤샤브 여주가남점</a></td>
+	<td>771-49-01100</td>
+	<td class="align_r p_align_r">44,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>53</td>
+	<td>부자이웃</td>
+	<td><a href="javascript:get_detail('17390');">봉구스밥버거 교통대점</a></td>
+	<td>853-09-03082</td>
+	<td class="align_r p_align_r">27,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>52</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17392');">강정천하 인천청라1점</a></td>
+	<td>214-47-00341</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>51</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17396');">피치타임 대구현풍점</a></td>
+	<td>884-12-02786</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>50</td>
+	<td>배상면주가</td>
+	<td><a href="javascript:get_detail('17397');">느린마을양조장 청량리역점</a></td>
+	<td>103-70-00748</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>할부</td>
+</tr>
+<tr>
+	<td>49</td>
+	<td>피자플렉스</td>
+	<td><a href="javascript:get_detail('17399');">피자플렉스 남구점</a></td>
+	<td>523-05-03752</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>48</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17401');">홍원각 검단사거리점</a></td>
+	<td>112-13-19442</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>47</td>
+	<td>대웅 푸드코트</td>
+	<td><a href="javascript:get_detail('17406');">숑숑돈가스 서울대웅제약점</a></td>
+	<td>889-19-02489</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>46</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17407');">감동짬뽕</a></td>
+	<td>351-05-03313</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>45</td>
+	<td>베브릿지</td>
+	<td><a href="javascript:get_detail('17409');">베브릿지 인하대점</a></td>
+	<td>838-86-00205</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>44</td>
+	<td>주식회사 더갓</td>
+	<td><a href="javascript:get_detail('17410');">갓잇 서면점</a></td>
+	<td>602-23-07114</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>43</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('17411');">간빠이 대구광장코아본점</a></td>
+	<td>282-25-02277</td>
+	<td class="align_r p_align_r">88,000</td>
+	<td>2025-09-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>42</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('17450');">담꾹 양산물금점</a></td>
+	<td>834-16-02514</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>41</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('17462');">순대일번지 가좌점</a></td>
+	<td>769-01-03326</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>40</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17475');">강정천하&amp;부자닭 문경농암점</a></td>
+	<td>439-39-01551</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>39</td>
+	<td>주식회사 브루클린브리즈</td>
+	<td><a href="javascript:get_detail('17476');">잇츠베이글 파주운정다율점</a></td>
+	<td>688-16-02624</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>38</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17478');">훌랄라치킨 구미문성점</a></td>
+	<td>240-18-02386</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>37</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17480');">에그존 진주평거점</a></td>
+	<td>239-07-03109</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>36</td>
+	<td>(주)올바른</td>
+	<td><a href="javascript:get_detail('17481');">올바른스포츠 제주연동점</a></td>
+	<td>853-42-01397</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>35</td>
+	<td>(주)정직한</td>
+	<td><a href="javascript:get_detail('17485');">벤티프레소 양산증산점</a></td>
+	<td>729-14-02862</td>
+	<td class="align_r p_align_r">38,500</td>
+	<td>2025-10-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>34</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('17716');">담꾹 정릉시장점</a></td>
+	<td>202-38-69587</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2025-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>33</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17762');">에그존 전주혁신점</a></td>
+	<td>566-17-02938</td>
+	<td class="align_r p_align_r">11,000</td>
+	<td>2025-12-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>32</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('17781');">보배반점 연산토곡점</a></td>
+	<td>834-73-00580</td>
+	<td class="align_r p_align_r">233,200</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>31</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17803');">구여사컵밥 봉명점</a></td>
+	<td>687-30-01818</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>30</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17818');">요거트과일싸롱 해미읍성점</a></td>
+	<td>771-16-02488</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>29</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17876');">울엄마양평해장국 입장점</a></td>
+	<td>688-32-00951</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>28</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17880');">울엄마양평해장국 음성점</a></td>
+	<td>794-12-00826</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>27</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17889');">울엄마양평해장국 대전전민점</a></td>
+	<td>314-17-53215</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>26</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17895');">정가네밥상</a></td>
+	<td>701-07-03701</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>25</td>
+	<td>(주)울엄마푸드</td>
+	<td><a href="javascript:get_detail('17903');">울엄마양평해장국 충남보령점</a></td>
+	<td>521-05-03566</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>24</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17904');">오븐숯불민족 인계점</a></td>
+	<td>759-16-02722</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>23</td>
+	<td>(주)올바른</td>
+	<td><a href="javascript:get_detail('17905');">올바른스포츠 목동점</a></td>
+	<td></td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>22</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17910');">훌랄라치킨 마천점</a></td>
+	<td>620-57-00088</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>21</td>
+	<td>배상면주가</td>
+	<td><a href="javascript:get_detail('17915');">느린마을양조장 구로디지털역점</a></td>
+	<td>581-06-03342</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>할부</td>
+</tr>
+<tr>
+	<td>20</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17925');">훌랄라치킨 평택포승공단점</a></td>
+	<td>649-16-02541</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>19</td>
+	<td>얼맥당</td>
+	<td><a href="javascript:get_detail('17928');">얼맥당 홍대카페거리점</a></td>
+	<td>339-02-03914</td>
+	<td class="align_r p_align_r">22,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>18</td>
+	<td>대단한에프앤비</td>
+	<td><a href="javascript:get_detail('17938');">대단한커피&amp;탕후루 안성공도점</a></td>
+	<td>803-04-03160</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>17</td>
+	<td>주식회사 죽이야기</td>
+	<td><a href="javascript:get_detail('17947');">죽이야기 양산신도시점</a></td>
+	<td>749-17-02585</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>16</td>
+	<td>주식회사 죽이야기</td>
+	<td><a href="javascript:get_detail('17949');">죽이야기 인천검단신도시점</a></td>
+	<td>412-19-09394</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>15</td>
+	<td>주식회사 티엘씨</td>
+	<td><a href="javascript:get_detail('17952');"><font color="red">[폐점]</font>어화도 다산점</a></td>
+	<td>558-02-03650</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>14</td>
+	<td>배상면주가</td>
+	<td><a href="javascript:get_detail('17955');">느린마을양조장 남춘천역점</a></td>
+	<td>798-34-01324</td>
+	<td class="align_r p_align_r">66,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>13</td>
+	<td>주식회사 죽이야기</td>
+	<td><a href="javascript:get_detail('17958');">죽이야기 군산수송점</a></td>
+	<td>363-14-00456</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>12</td>
+	<td>(주)퍼스트에이엔티</td>
+	<td><a href="javascript:get_detail('17960');">여우애김밥 여의도점</a></td>
+	<td>894-85-03414</td>
+	<td class="align_r p_align_r">280,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>11</td>
+	<td>한스앤컴퍼니</td>
+	<td><a href="javascript:get_detail('17962');">수작카츠 원흥점</a></td>
+	<td>227-12-07635</td>
+	<td class="align_r p_align_r">149,600</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>테이블오더/ASP</td>
+</tr>
+<tr>
+	<td>10</td>
+	<td>(주)디엔에프씨</td>
+	<td><a href="javascript:get_detail('17967');">담꾹 대구두류대명점</a></td>
+	<td>388-09-02390</td>
+	<td class="align_r p_align_r">16,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+<tr>
+	<td>9</td>
+	<td>보배에프앤비</td>
+	<td><a href="javascript:get_detail('17969');">보배반점 남양주2청사점</a></td>
+	<td>389-36-01691</td>
+	<td class="align_r p_align_r">224,400</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>테이블오더</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17971');">고기볶고</a></td>
+	<td>445-07-03515</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('17972');">자운정</a></td>
+	<td>562-32-00528</td>
+	<td class="align_r p_align_r">49,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17974');">강정천하 수원세류점</a></td>
+	<td>239-18-02843</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td>(주)퍼스트에이엔티</td>
+	<td><a href="javascript:get_detail('17975');">여우애김밥 전남장성점</a></td>
+	<td>581-65-00866</td>
+	<td class="align_r p_align_r">126,500</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>할부/ASP</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17984');">고려통닭 청주봉명점</a></td>
+	<td>288-43-01339</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>훌랄라</td>
+	<td><a href="javascript:get_detail('17985');">안심쌀통닭 청주오창1점</a></td>
+	<td>632-59-00391</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-02-05</td>
+	<td>5</td>
+	<td>임대/ASP</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>(주)제이스타임</td>
+	<td><a href="javascript:get_detail('18014');">간빠이 구리토평점</a></td>
+	<td>753-24-02001</td>
+	<td class="align_r p_align_r">121,000</td>
+	<td>2026-05-05</td>
+	<td>5</td>
+	<td>테이블오더/임대/ASP</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>단독매장</td>
+	<td><a href="javascript:get_detail('18123');">(주)송캠파크앤리조트</a></td>
+	<td>135-87-02566</td>
+	<td class="align_r p_align_r">33,000</td>
+	<td>2026-05-05</td>
+	<td>5</td>
+	<td>ASP</td>
+</tr>
+
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table class="list">
+												<colgroup>
+													<col width="90">
+													<col width="100">
+													<col width="200">
+													<col width="90">
+													<col width="90">
+													<col width="80">
+													<col width="65">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>									
+														<th colspan="4">합계</th>
+														<th class="align_r p_align_r">15,343,900</th>
+														<th></th>
+														<th></th>
+														<th></th>
+														
+													</tr>
+												</thead>
+											</table>
+										</td>
+									</tr>
+								</tbody></table>
+								<p>&nbsp;</p>
+								<h4 class="sub_title">CMS 2026년 05월 마감 현황</h4><p>&nbsp;</p>
+								<table class="list" id="status">
+									
+									<thead>
+										<tr style="border-bottom:1px solid #e5e5e5;">
+											<th rowspan="2" style="border-right:1px solid #888888;">출금일</th>
+											<th rowspan="2" style="border-right:1px solid #888888;">합계</th>
+											<th colspan="2" style="border-right:1px solid #888888;">ASP</th>
+											<th colspan="2" style="border-right:1px solid #888888;">할부</th>
+											<th colspan="2" style="border-right:1px solid #888888;">임대</th>
+											<th colspan="2" style="border-right:1px solid #888888;">배달</th>
+											<th colspan="2">테이블오더</th>
+										</tr>
+										<tr style="border-bottom:2px solid #383838;">
+											
+											<th>건수</th>
+											<th style="border-right:1px solid #888888;">금액</th>
+											<th>건수</th>
+											<th style="border-right:1px solid #888888;">금액</th>
+											<th>건수</th>
+											<th style="border-right:1px solid #888888;">금액</th>
+											<th>건수</th>
+											<th style="border-right:1px solid #888888;">금액</th>
+											<th>건수</th>
+											<th>금액</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr>
+	<td style="border-right:1px solid #888888;">대기</td>
+	<th style="border-right:1px solid #888888;">0</th>
+	<th>0</th>
+	<th style="border-right:1px solid #888888;">0</th>
+	<th>0</th>
+	<th style="border-right:1px solid #888888;">0</th>
+	<th>0</th>
+	<th style="border-right:1px solid #888888;">0</th>
+	<th>0</th>
+	<th style="border-right:1px solid #888888;">0</th>
+	<th>0</th>
+	<th>0</th>
+</tr>
+</tbody>
+	
+										
+										
+									
+								</table>
+							
+</body>

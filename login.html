@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 — 엑셀 청구 검증 시스템</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0D1B3E;
+            --blue: #1553C7;
+            --blue-light: #3B74E8;
+            --r: 8px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            background: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(21, 83, 199, .35) 0%, transparent 65%);
+            top: -250px;
+            right: -250px;
+            pointer-events: none;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(14, 165, 233, .18) 0%, transparent 65%);
+            bottom: -150px;
+            left: -150px;
+            pointer-events: none;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 18px;
+            padding: 48px;
+            width: 420px;
+            backdrop-filter: blur(24px);
+            position: relative;
+            z-index: 1;
+            animation: appear .4s ease both;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hd {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .mark {
+            width: 60px;
+            height: 60px;
+            background: #177a05;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            color: white;
+            margin: 0 auto 16px;
+            letter-spacing: -1px;
+        }
+
+        .ttl {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .sub {
+            font-size: 12px;
+            color: rgba(255, 255, 255, .35);
+            margin-top: 6px;
+            font-weight: 300;
+        }
+
+        .err-box {
+            background: rgba(211, 47, 47, .15);
+            border: 1px solid rgba(211, 47, 47, .3);
+            border-radius: var(--r);
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #FF7070;
+            margin-bottom: 14px;
+            display: none;
+        }
+
+        .fg {
+            margin-bottom: 14px;
+        }
+
+        .lbl {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: rgba(255, 255, 255, .45);
+            margin-bottom: 7px;
+        }
+
+        .inp {
+            width: 100%;
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: var(--r);
+            padding: 12px 16px;
+            font-size: 14px;
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            outline: none;
+            transition: all .2s;
+        }
+
+        .inp::placeholder {
+            color: rgba(255, 255, 255, .22);
+        }
+
+        .inp:focus {
+            border-color: var(--blue-light);
+            background: rgba(255, 255, 255, .09);
+            box-shadow: 0 0 0 3px rgba(59, 116, 232, .25);
+        }
+
+        .btn {
+            width: 100%;
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: var(--r);
+            padding: 14px;
+            margin-top: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .btn:hover {
+            background: var(--blue-light);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(21, 83, 199, .45);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .hint {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="hd">
+            <div class="mark">Excel</div>
+            <div class="ttl">CMS & 밴프로 엑셀 검증</div>
+            <div class="sub">Excel Billing Validation Tool</div>
+        </div>
+
+        <div class="err-box" id="err">아이디 또는 비밀번호가 올바르지 않습니다.</div>
+
+        <div class="fg">
+            <label class="lbl">아이디</label>
+            <input class="inp" type="text" id="uid" placeholder="아이디를 입력하세요" autocomplete="username">
+        </div>
+        <div class="fg">
+            <label class="lbl">비밀번호</label>
+            <input class="inp" type="password" id="upw" placeholder="비밀번호를 입력하세요" autocomplete="current-password">
+        </div>
+
+        <button class="btn" id="btn-login">로그인</button>
+        <!-- <div class="hint">테스트 계정&nbsp;:&nbsp;admin / admin1234</div> -->
+    </div>
+
+    <script>
+        const USERS = { admin: 'admin1234', user: 'user1234' };
+
+        // 이미 로그인돼 있으면 바로 메인으로
+        if (sessionStorage.getItem('ev_user')) {
+            location.replace('excel-validator.html');
+        }
+
+        function doLogin() {
+            const id = document.getElementById('uid').value.trim();
+            const pw = document.getElementById('upw').value;
+            const err = document.getElementById('err');
+
+            if (USERS[id] && USERS[id] === pw) {
+                sessionStorage.setItem('ev_user', id);
+                location.replace('excel-validator.html');
+            } else {
+                err.style.display = 'block';
+                document.getElementById('upw').value = '';
+                document.getElementById('upw').focus();
+            }
+        }
+
+        document.getElementById('btn-login').addEventListener('click', doLogin);
+        document.getElementById('upw').addEventListener('keydown', e => e.key === 'Enter' && doLogin());
+        document.getElementById('uid').addEventListener('keydown', e => e.key === 'Enter' && doLogin());
+    </script>
+</body>
+
+</html>
