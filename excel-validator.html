@@ -103,6 +103,34 @@
             color: var(--accent);
         }
 
+        .hdr-user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,.75);
+            font-size: 13px;
+        }
+
+        .btn-logout {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,.45);
+            color: rgba(255,255,255,.85);
+            border-radius: 6px;
+            padding: 5px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: .5px;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .btn-logout:hover {
+            background: rgba(255,255,255,.12);
+            border-color: rgba(255,255,255,.8);
+            color: white;
+        }
+
         /* ── LAYOUT ── */
         .main-wrap {
             max-width: 1420px;
