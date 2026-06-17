@@ -7,8 +7,7 @@
     <title>엑셀 청구 데이터 검증 툴</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
 
     <style>
@@ -47,7 +46,7 @@
         }
 
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             background: var(--surface);
             color: var(--text);
             min-height: 100vh;
@@ -92,7 +91,7 @@
         }
 
         .hdr-name {
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             font-weight: 700;
             font-size: 17px;
             color: white;
@@ -136,14 +135,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 11px;
             font-weight: 700;
             color: white;
         }
 
         .s-title {
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 13px;
             font-weight: 700;
             color: white;
@@ -182,7 +181,7 @@
         }
 
         .up-lbl {
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             font-weight: 700;
             font-size: 12px;
             letter-spacing: 2px;
@@ -213,9 +212,10 @@
         }
 
         .drop-icon {
-            font-size: 38px;
             display: block;
             margin-bottom: 10px;
+            color: var(--blue-light);
+            line-height: 1;
         }
 
         .drop-txt {
@@ -241,7 +241,7 @@
             padding: 10px 14px;
             font-size: 13px;
             color: var(--ok);
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-weight: 600;
             margin-bottom: 14px;
         }
@@ -286,7 +286,7 @@
             padding: 8px 11px;
             font-size: 13px;
             color: var(--text);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             cursor: pointer;
             outline: none;
             transition: border-color .2s;
@@ -313,7 +313,7 @@
             padding: 14px 24px;
             font-size: 14px;
             font-weight: 600;
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             cursor: pointer;
             transition: all .2s;
         }
@@ -332,7 +332,7 @@
             padding: 14px 52px;
             font-size: 16px;
             font-weight: 700;
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             letter-spacing: 3px;
             text-transform: uppercase;
             cursor: pointer;
@@ -372,7 +372,7 @@
         }
 
         .stat-lbl {
-            font-size: 10px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -381,7 +381,7 @@
         }
 
         .stat-val {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 38px;
             font-weight: 700;
             color: var(--navy);
@@ -389,8 +389,9 @@
         }
 
         .stat-sub {
-            font-size: 11px;
-            color: var(--text-soft);
+            font-size: 14px;
+            color: #113256;
+            font-weight: bold;
             margin-top: 6px;
         }
 
@@ -433,12 +434,16 @@
         }
 
         .search-wrap::before {
-            content: '🔍';
+            content: '';
             position: absolute;
             left: 9px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 11px;
+            width: 14px;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237B90BE' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
             pointer-events: none;
         }
 
@@ -449,7 +454,7 @@
             padding: 7px 12px 7px 30px;
             font-size: 13px;
             color: var(--text);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             outline: none;
             transition: border-color .2s;
             width: 300px;
@@ -462,7 +467,7 @@
         .dtbl tfoot td {
             background: var(--navy-mid, #1A3065);
             color: rgba(255, 255, 255, .9);
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-weight: 700;
             font-size: 12px;
             padding: 11px 15px;
@@ -494,7 +499,7 @@
         .tbl-cnt {
             font-size: 12px;
             color: var(--text-soft);
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
         }
 
         .btn-dl {
@@ -505,7 +510,7 @@
             padding: 8px 18px;
             font-size: 12px;
             font-weight: 700;
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             cursor: pointer;
@@ -543,7 +548,7 @@
             color: rgba(255, 255, 255, .75);
             padding: 11px 15px;
             text-align: left;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -596,6 +601,34 @@
             background: #FFB8B8 !important;
         }
 
+        .dtbl tbody tr.row-dup {
+            background: #E3F2FD !important;
+        }
+
+        .dtbl tbody tr.row-dup td {
+            color: #1553C7 !important;
+            border-bottom-color: #BBDEFB;
+            border-right-color: #BBDEFB;
+        }
+
+        .dtbl tbody tr.row-dup:hover {
+            background: #BBDEFB !important;
+        }
+
+        .dtbl tbody tr.row-nobiz {
+            background: #E3F2FD !important;
+        }
+
+        .dtbl tbody tr.row-nobiz td {
+            color: #1553C7 !important;
+            border-bottom-color: #BBDEFB;
+            border-right-color: #BBDEFB;
+        }
+
+        .dtbl tbody tr.row-nobiz:hover {
+            background: #BBDEFB !important;
+        }
+
         .dtbl tbody tr.row-warn {
             background: var(--warn-bg) !important;
         }
@@ -611,12 +644,12 @@
         }
 
         .num-cell {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             text-align: right;
         }
 
         .biz-cell {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-weight: 600;
             letter-spacing: .5px;
         }
@@ -644,6 +677,16 @@
         .b-warn {
             background: var(--warn-bg);
             color: var(--warn);
+        }
+
+        .b-dup {
+            background: #BBDEFB;
+            color: #1553C7;
+        }
+
+        .b-nobiz {
+            background: #BBDEFB;
+            color: #1553C7;
         }
 
         /* ── MODAL ── */
@@ -692,7 +735,7 @@
         }
 
         .modal-ttl {
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 15px;
             font-weight: 700;
             color: white;
@@ -701,7 +744,7 @@
         }
 
         .modal-biz {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 13px;
             color: var(--accent);
             font-weight: 600;
@@ -747,8 +790,8 @@
 
         .m-pane-hd {
             padding: 9px 15px;
-            font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
-            font-size: 11px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -789,7 +832,7 @@
         }
 
         .m-tbl .v {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Noto Sans KR', sans-serif;
             color: var(--text);
             word-break: break-all;
         }
@@ -852,7 +895,7 @@
         .exbox {
             font-size: 13px;
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 15px 20px;
             border-radius: 12px;
             background: #d5e8f5;
         }
@@ -888,9 +931,16 @@
                         <!-- FILE A (CMS) -->
                         <div class="up-panel" id="panel-a" ondragover="onDragOver(event)"
                             ondragleave="onDragLeave(event,'a')" ondrop="onDrop(event,'a')">
-                            <div class="up-lbl"><span class="ftag">CMS</span> CMS 데이터</div>
+                            <div class="up-lbl"><span class="ftag">CMS 데이터</span></div>
                             <div class="dropzone" onclick="document.getElementById('fi-a').click()">
-                                <span class="drop-icon">📂</span>
+                                <span class="drop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                        <line x1="16" y1="13" x2="8" y2="13" />
+                                        <line x1="16" y1="17" x2="8" y2="17" />
+                                    </svg></span>
                                 <div class="drop-txt">
                                     <strong>파일 A 드래그 또는 클릭하여 파일 선택</strong>
                                 </div>
@@ -898,7 +948,7 @@
                             <input type="file" id="fi-a" accept=".xlsx,.xls,.csv" onchange="onFileSelect(event,'a')">
                             <div class="f-info hidden" id="fi-info-a"></div>
                             <div class="mp-grp hidden" id="mp-a">
-                                <div class="mp-div">필수 컬럼</div>
+                                <!-- <div class="mp-div">필수 컬럼</div> -->
                                 <div class="mp-row">
                                     <span class="mp-lbl">사업자번호</span>
                                     <select class="mp-sel" id="ma-biz">
@@ -923,9 +973,16 @@
                         <!-- FILE B (밴프로) -->
                         <div class="up-panel" id="panel-b" ondragover="onDragOver(event)"
                             ondragleave="onDragLeave(event,'b')" ondrop="onDrop(event,'b')">
-                            <div class="up-lbl"><span class="ftag ftag-b">밴프로</span> 밴프로 데이터</div>
+                            <div class="up-lbl"><span class="ftag ftag-b">밴프로 데이터</span></div>
                             <div class="dropzone" onclick="document.getElementById('fi-b').click()">
-                                <span class="drop-icon">📄</span>
+                                <span class="drop-icon"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                        <line x1="16" y1="13" x2="8" y2="13" />
+                                        <line x1="16" y1="17" x2="8" y2="17" />
+                                    </svg></span>
                                 <div class="drop-txt">
                                     <strong>파일 B 드래그 또는 클릭하여 파일 선택</strong>
                                 </div>
@@ -933,7 +990,7 @@
                             <input type="file" id="fi-b" accept=".xlsx,.xls,.csv" onchange="onFileSelect(event,'b')">
                             <div class="f-info hidden" id="fi-info-b"></div>
                             <div class="mp-grp hidden" id="mp-b">
-                                <div class="mp-div">필수 컬럼</div>
+                                <!-- <div class="mp-div">필수 컬럼</div> -->
                                 <div class="mp-row">
                                     <span class="mp-lbl">사업자번호</span>
                                     <select class="mp-sel" id="mb-biz">
@@ -959,7 +1016,12 @@
 
                     <div class="cmp-wrap">
                         <button class="btn-cmp" id="btn-cmp" onclick="runComparison()" disabled>
-                            🔍 &nbsp;데이터 비교 실행
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" style="vertical-align:middle;margin-right:8px">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>데이터 비교 실행
                         </button>
                         <button class="btn-reset" onclick="resetAll()">↺ 초기화</button>
                     </div>
@@ -973,21 +1035,49 @@
                     <div class="s-title">비교 결과 요약</div>
                 </div>
                 <div class="s-body">
-                    <div class="dash-grid">
+                    <!-- 1행: CMS / 밴프로 원본 데이터 현황 + 차액 -->
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px;">
+                        <div class="stat" style="background:#EAF0FC;border-color:#1553C7;">
+                            <div class="stat-lbl" style="color:#1553C7;">CMS 데이터</div>
+                            <div class="stat-val" id="st-cms-cnt" style="font-size:28px;color:#1553C7;">—</div>
+                            <div class="stat-sub" id="st-cms-amt">청구금액 합계: —</div>
+                        </div>
+                        <div class="stat" style="background:#E0F7FA;border-color:#0EA5E9;">
+                            <div class="stat-lbl" style="color:#0EA5E9;">밴프로 데이터</div>
+                            <div class="stat-val" id="st-vpro-cnt" style="font-size:28px;color:#0EA5E9;">—</div>
+                            <div class="stat-sub" id="st-vpro-amt">청구금액 합계: —</div>
+                        </div>
+                        <div class="stat" id="st-diff-box">
+                            <div class="stat-lbl" id="st-diff-lbl">CMS/밴프로 차액</div>
+                            <div class="stat-val" id="st-sum-diff" style="font-size:28px;">—</div>
+                        </div>
+                    </div>
+                    <!-- 2행: 비교 결과 통계 5열 -->
+                    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:16px;">
                         <div class="stat">
-                            <div class="stat-lbl">전체 건수</div>
-                            <div class="stat-val" id="st-total">—</div>
-                            <div class="stat-sub">총 비교 항목</div>
+                            <div class="stat-lbl">전체 비교 항목 건수</div>
+                            <div class="stat-val" id="st-total" style="font-size:28px;">—</div>
+                            <!-- <div class="stat-sub">총 비교 항목</div> -->
                         </div>
                         <div class="stat ok">
                             <div class="stat-lbl">✓ 일치</div>
-                            <div class="stat-val" id="st-match">—</div>
-                            <div class="stat-sub">금액 일치 항목</div>
+                            <div class="stat-val" id="st-match" style="font-size:28px;">—</div>
+                            <!-- <div class="stat-sub">금액 일치 항목</div> -->
                         </div>
                         <div class="stat err">
                             <div class="stat-lbl">⚠ 불일치</div>
-                            <div class="stat-val" id="st-mismatch">—</div>
-                            <div class="stat-sub">검토 필요 항목</div>
+                            <div class="stat-val" id="st-mismatch" style="font-size:28px;">—</div>
+                            <!-- <div class="stat-sub">검토 필요 항목</div> -->
+                        </div>
+                        <div class="stat" style="background:var(--warn-bg);border-color:#F5D78A;">
+                            <div class="stat-lbl" style="color:var(--warn);">CMS만 존재</div>
+                            <div class="stat-val" id="st-only-a" style="font-size:28px;color:var(--warn);">—</div>
+                            <!-- <div class="stat-sub">밴프로 미존재</div> -->
+                        </div>
+                        <div class="stat" style="background:var(--warn-bg);border-color:#F5D78A;">
+                            <div class="stat-lbl" style="color:var(--warn);">밴프로만 존재</div>
+                            <div class="stat-val" id="st-only-b" style="font-size:28px;color:var(--warn);">—</div>
+                            <!-- <div class="stat-sub">CMS 미존재</div> -->
                         </div>
                     </div>
                 </div>
@@ -1270,38 +1360,84 @@
             const bShopIdx = (bShopVal !== '' && bShopVal !== undefined) ? +bShopVal : null;
 
             const mapA = new Map();
-            S.fileA.rows.forEach(r => { const k = normBiz(r[aBiz]); if (k) mapA.set(k, r); });
+            S.fileA.rows.forEach(r => {
+                const k = normBiz(r[aBiz]);
+                if (k) { if (!mapA.has(k)) mapA.set(k, []); mapA.get(k).push(r); }
+            });
 
             const mapB = new Map();
-            S.fileB.rows.forEach(r => { const k = normBiz(r[bBiz]); if (k) mapB.set(k, r); });
+            S.fileB.rows.forEach(r => {
+                const k = normBiz(r[bBiz]);
+                if (k) { if (!mapB.has(k)) mapB.set(k, []); mapB.get(k).push(r); }
+            });
 
             const keys = new Set([...mapA.keys(), ...mapB.keys()]);
             const results = [];
 
             keys.forEach(biz => {
-                const rA = mapA.get(biz) || null;
-                const rB = mapB.get(biz) || null;
-                const vA = rA ? parseAmt(rA[aAmt]) : null;
-                const vB = rB ? parseAmt(rB[bAmt]) : null;
+                const rowsA = mapA.get(biz) || [];
+                const rowsB = mapB.get(biz) || [];
+                const isDuplicate = rowsA.length > 1 || rowsB.length > 1;
+                const maxLen = Math.max(rowsA.length, rowsB.length, 1);
 
-                let status;
-                if (rA && rB) status = vA === vB ? 'match' : 'mismatch';
-                else if (rA && !rB) status = 'only-a';
-                else status = 'only-b';
+                for (let i = 0; i < maxLen; i++) {
+                    const rA = rowsA[i] || null;
+                    const rB = rowsB[i] || null;
+                    const vA = rA ? parseAmt(rA[aAmt]) : null;
+                    const vB = rB ? parseAmt(rB[bAmt]) : null;
 
-                const diff = (vA !== null && vB !== null) ? vA - vB : null;
+                    let status;
+                    if (rA && rB) status = vA === vB ? 'match' : 'mismatch';
+                    else if (rA && !rB) status = 'only-a';
+                    else status = 'only-b';
 
-                results.push({
-                    biz, rA, rB, vA, vB, diff, status,
-                    shopA: (rA && aShopIdx !== null) ? String(rA[aShopIdx] ?? '') : '',
-                    shopB: (rB && bShopIdx !== null) ? String(rB[bShopIdx] ?? '') : '',
-                    hdA: S.fileA.headers, hdB: S.fileB.headers,
-                    aBiz, aAmt, bBiz, bAmt
-                });
+                    const diff = (vA !== null && vB !== null) ? vA - vB : null;
+
+                    results.push({
+                        biz, rA, rB, vA, vB, diff, status, isDuplicate,
+                        shopA: (rA && aShopIdx !== null) ? String(rA[aShopIdx] ?? '') : '',
+                        shopB: (rB && bShopIdx !== null) ? String(rB[bShopIdx] ?? '') : '',
+                        hdA: S.fileA.headers, hdB: S.fileB.headers,
+                        aBiz, aAmt, bBiz, bAmt
+                    });
+                }
+            });
+
+            // 사업자번호 없는 행 추가 (CMS)
+            S.fileA.rows.forEach(r => {
+                if (normBiz(r[aBiz]) === null) {
+                    results.push({
+                        biz: null, rA: r, rB: null, vA: parseAmt(r[aAmt]), vB: null, diff: null,
+                        status: 'no-biz', isDuplicate: false,
+                        shopA: (aShopIdx !== null) ? String(r[aShopIdx] ?? '') : '',
+                        shopB: '',
+                        hdA: S.fileA.headers, hdB: S.fileB.headers,
+                        aBiz, aAmt, bBiz, bAmt
+                    });
+                }
+            });
+
+            // 사업자번호 없는 행 추가 (밴프로)
+            S.fileB.rows.forEach(r => {
+                if (normBiz(r[bBiz]) === null) {
+                    results.push({
+                        biz: null, rA: null, rB: r, vA: null, vB: parseAmt(r[bAmt]), diff: null,
+                        status: 'no-biz', isDuplicate: false,
+                        shopA: '',
+                        shopB: (bShopIdx !== null) ? String(r[bShopIdx] ?? '') : '',
+                        hdA: S.fileA.headers, hdB: S.fileB.headers,
+                        aBiz, aAmt, bBiz, bAmt
+                    });
+                }
             });
 
             const order = { mismatch: 0, 'only-a': 1, 'only-b': 2, match: 3 };
-            results.sort((a, b) => order[a.status] - order[b.status]);
+            results.sort((a, b) => {
+                if (a.status === 'no-biz' && b.status !== 'no-biz') return 1;
+                if (a.status !== 'no-biz' && b.status === 'no-biz') return -1;
+                if (a.isDuplicate !== b.isDuplicate) return a.isDuplicate ? 1 : -1;
+                return order[a.status] - order[b.status];
+            });
             S.results = results;
 
             const total = results.length;
@@ -1311,6 +1447,28 @@
             document.getElementById('st-total').textContent = total;
             document.getElementById('st-match').textContent = matched;
             document.getElementById('st-mismatch').textContent = bad;
+
+            const onlyA = results.filter(r => r.status === 'only-a').length;
+            const onlyB = results.filter(r => r.status === 'only-b').length;
+            document.getElementById('st-only-a').textContent = onlyA;
+            document.getElementById('st-only-b').textContent = onlyB;
+
+            const cmsCount = S.fileA.rows.length;
+            const cmsTotal = S.fileA.rows.reduce((s, r) => s + parseAmt(r[aAmt]), 0);
+            const vproCount = S.fileB.rows.length;
+            const vproTotal = S.fileB.rows.reduce((s, r) => s + parseAmt(r[bAmt]), 0);
+            document.getElementById('st-cms-cnt').textContent = cmsCount + '건';
+            document.getElementById('st-cms-amt').textContent = '청구금액 합계: ' + fmtMoney(cmsTotal);
+            document.getElementById('st-vpro-cnt').textContent = vproCount + '건';
+            document.getElementById('st-vpro-amt').textContent = '청구금액 합계: ' + fmtMoney(vproTotal);
+
+            const sumDiff = cmsTotal - vproTotal;
+            document.getElementById('st-sum-diff').textContent = fmtDiff(sumDiff);
+            const diffBox = document.getElementById('st-diff-box');
+            diffBox.style.background = sumDiff !== 0 ? '#FFF5F5' : '#E8FAF0';
+            diffBox.style.borderColor = sumDiff !== 0 ? '#FFCCCC' : '#86EFAC';
+            document.getElementById('st-diff-lbl').style.color = sumDiff !== 0 ? 'var(--err)' : 'var(--ok)';
+            document.getElementById('st-sum-diff').style.color = sumDiff !== 0 ? 'var(--err)' : 'var(--ok)';
 
             document.getElementById('sec-dash').classList.remove('hidden');
             document.getElementById('sec-tbl').classList.remove('hidden');
@@ -1357,7 +1515,10 @@
 
             rows.forEach((row, idx) => {
                 const tr = document.createElement('tr');
-                const cls = row.status === 'match' ? 'row-ok' : row.status === 'mismatch' ? 'row-err' : 'row-warn';
+                const cls = row.isDuplicate ? 'row-dup'
+                    : row.status === 'match' ? 'row-ok'
+                        : row.status === 'mismatch' ? 'row-err'
+                            : 'row-warn';
                 tr.className = cls;
 
                 const aFmt = row.vA !== null ? fmtMoney(row.vA) : '<span style="opacity:.5">없음</span>';
@@ -1366,14 +1527,14 @@
                 const dBold = row.diff !== null && row.diff !== 0 ? ' style="font-weight:700"' : '';
 
                 tr.innerHTML =
-                    `<td style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-soft)">${idx + 1}</td>` +
+                    `<td style="text-align:center;font-family:'Noto Sans KR',sans-serif;font-size:11px;color:var(--text-soft)">${idx + 1}</td>` +
                     `<td class="biz-cell">${fmtBiz(row.biz)}</td>` +
                     `<td>${escHtml(row.shopA || '—')}</td>` +
                     `<td>${escHtml(row.shopB || '—')}</td>` +
                     `<td class="num-cell">${aFmt}</td>` +
                     `<td class="num-cell">${bFmt}</td>` +
                     `<td class="num-cell"${dBold}>${dFmt}</td>` +
-                    `<td>${badgeHtml(row.status)}</td>`;
+                    `<td>${badgeHtml(row.status, row.isDuplicate)}</td>`;
 
                 tr.addEventListener('click', () => openModal(row));
                 tbody.appendChild(tr);
@@ -1394,7 +1555,8 @@
                 `</tr>`;
         }
 
-        function badgeHtml(s) {
+        function badgeHtml(s, isDup) {
+            if (isDup) return '<span class="badge b-dup">중복</span>';
             if (s === 'match') return '<span class="badge b-ok">✓ 일치</span>';
             if (s === 'mismatch') return '<span class="badge b-err">✕ 불일치</span>';
             if (s === 'only-a') return '<span class="badge b-warn">CMS만 존재</span>';
