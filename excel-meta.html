@@ -914,9 +914,9 @@
         <div class="main-wrap">
             <div class="exbox">
                 <strong>[XLS Excel 2003 이하, XLSX Excel 2007 이상] CMS xls 파일을 xlsx파일로 변환 작업 필요</strong> <br>
-                1. cms 파일 열고 전체 복사 -> 엑셀 새 파일 만들어서 붙여넣기 -> 파일 저장<br>
-                2. 저장된 xlsx 변환 파일 확인 후 아래 왼쪽 cms 첨부파일 드래그 또는 클릭하여 파일 선택<br>
-                3. 밴프로 xlsx 파일 아래 오른쪽 밴프로 첨부파일 드래그 또는 클릭하여 파일 선택<br>
+                1. cms 파일 열고 하단 합계를 제외한 전체 복사 -> 엑셀 새 파일 만들어서 붙여넣기 -> 파일 저장<br>
+                2. cms xlsx 변환 파일 왼쪽 첨부파일 추가<br>
+                3. 밴프로 xlsx 파일 오른쪽 첨부파일 추가<br>
                 4. 데이터 비교 실행 버튼 클릭<br>
             </div>
             <!-- ① 업로드 -->
@@ -1408,7 +1408,7 @@
                 if (normBiz(r[aBiz]) === null) {
                     results.push({
                         biz: null, rA: r, rB: null, vA: parseAmt(r[aAmt]), vB: null, diff: null,
-                        status: 'no-biz', isDuplicate: false,
+                        status: 'no-biz-a', isDuplicate: false,
                         shopA: (aShopIdx !== null) ? String(r[aShopIdx] ?? '') : '',
                         shopB: '',
                         hdA: S.fileA.headers, hdB: S.fileB.headers,
@@ -1422,7 +1422,7 @@
                 if (normBiz(r[bBiz]) === null) {
                     results.push({
                         biz: null, rA: null, rB: r, vA: null, vB: parseAmt(r[bAmt]), diff: null,
-                        status: 'no-biz', isDuplicate: false,
+                        status: 'no-biz-b', isDuplicate: false,
                         shopA: '',
                         shopB: (bShopIdx !== null) ? String(r[bShopIdx] ?? '') : '',
                         hdA: S.fileA.headers, hdB: S.fileB.headers,
@@ -1431,12 +1431,10 @@
                 }
             });
 
-            const order = { mismatch: 0, 'only-a': 1, 'only-b': 2, match: 3 };
+            const order = { mismatch: 0, 'only-a': 1, 'no-biz-a': 2, 'only-b': 3, 'no-biz-b': 4, match: 5 };
             results.sort((a, b) => {
-                if (a.status === 'no-biz' && b.status !== 'no-biz') return 1;
-                if (a.status !== 'no-biz' && b.status === 'no-biz') return -1;
                 if (a.isDuplicate !== b.isDuplicate) return a.isDuplicate ? 1 : -1;
-                return order[a.status] - order[b.status];
+                return (order[a.status] ?? 99) - (order[b.status] ?? 99);
             });
             S.results = results;
 
@@ -1559,7 +1557,8 @@
             if (isDup) return '<span class="badge b-dup">중복</span>';
             if (s === 'match') return '<span class="badge b-ok">✓ 일치</span>';
             if (s === 'mismatch') return '<span class="badge b-err">✕ 불일치</span>';
-            if (s === 'only-a') return '<span class="badge b-warn">CMS만 존재</span>';
+            if (s === 'only-a' || s === 'no-biz-a') return '<span class="badge b-warn">CMS만 존재</span>';
+            if (s === 'no-biz-b') return '<span class="badge b-warn">밴프로만 존재</span>';
             return '<span class="badge b-warn">밴프로만 존재</span>';
         }
 
@@ -1578,7 +1577,7 @@
                     row.vA !== null ? row.vA : '',
                     row.vB !== null ? row.vB : '',
                     row.diff !== null ? row.diff : '',
-                    { match: '일치', mismatch: '불일치', 'only-a': 'CMS만 존재', 'only-b': '밴프로만 존재' }[row.status] || ''
+                    { match: '일치', mismatch: '불일치', 'only-a': 'CMS만 존재', 'no-biz-a': 'CMS만 존재', 'only-b': '밴프로만 존재', 'no-biz-b': '밴프로만 존재' }[row.status] || ''
                 ]);
             });
 
