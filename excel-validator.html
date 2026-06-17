@@ -1521,14 +1521,13 @@
 
             const total = results.length;
             const matched = results.filter(r => r.status === 'match').length;
-            const bad = total - matched;
+            const mismatch = results.filter(r => r.status === 'mismatch').length;
+            const onlyA = results.filter(r => r.status === 'only-a' || r.status === 'no-biz-a').length;
+            const onlyB = results.filter(r => r.status === 'only-b' || r.status === 'no-biz-b').length;
 
             document.getElementById('st-total').textContent = total;
             document.getElementById('st-match').textContent = matched;
-            document.getElementById('st-mismatch').textContent = bad;
-
-            const onlyA = results.filter(r => r.status === 'only-a').length;
-            const onlyB = results.filter(r => r.status === 'only-b').length;
+            document.getElementById('st-mismatch').textContent = mismatch;
             document.getElementById('st-only-a').textContent = onlyA;
             document.getElementById('st-only-b').textContent = onlyB;
 
