@@ -507,21 +507,37 @@
             border-right: none;
         }
 
-        .filt-toggle {
+        .filt-radio-group {
             display: flex;
+            gap: 6px;
             align-items: center;
-            gap: 8px;
-            font-size: 13px;
+            flex-wrap: wrap;
+        }
+
+        .filt-radio {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 13px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
             color: var(--text-mid);
             cursor: pointer;
             user-select: none;
+            transition: all .15s;
+            background: white;
+            font-family: 'Noto Sans KR', sans-serif;
         }
 
-        .filt-toggle input {
-            width: 16px;
-            height: 16px;
-            cursor: pointer;
-            accent-color: var(--blue);
+        .filt-radio:has(input:checked) {
+            background: var(--navy);
+            border-color: var(--navy);
+            color: white;
+        }
+
+        .filt-radio input {
+            display: none;
         }
 
         .tbl-cnt {
@@ -1127,10 +1143,13 @@
                 <div class="s-body">
                     <div class="tbl-bar">
                         <div class="tbl-bar-left">
-                            <label class="filt-toggle">
-                                <input type="checkbox" id="filt-cb" onchange="renderTable()">
-                                불일치 항목만 보기
-                            </label>
+                            <div class="filt-radio-group">
+                                <label class="filt-radio"><input type="radio" name="filt-r" value="all" checked onchange="renderTable()">전체</label>
+                                <label class="filt-radio"><input type="radio" name="filt-r" value="match" onchange="renderTable()">일치</label>
+                                <label class="filt-radio"><input type="radio" name="filt-r" value="mismatch" onchange="renderTable()">불일치</label>
+                                <label class="filt-radio"><input type="radio" name="filt-r" value="only-a" onchange="renderTable()">CMS만</label>
+                                <label class="filt-radio"><input type="radio" name="filt-r" value="only-b" onchange="renderTable()">밴프로만</label>
+                            </div>
                             <div class="search-wrap">
                                 <input class="search-inp" type="text" id="search-inp" placeholder="사업자번호·매장명·상호명 검색"
                                     oninput="renderTable()">
@@ -1208,7 +1227,7 @@
                     fileB: { headers: S.fileB.headers, rows: S.fileB.rows },
                     hasResults: S.results.length > 0,
                     mappings: getCurrentMappings(),
-                    filterOnly: document.getElementById('filt-cb')?.checked || false
+                    filterRadio: document.querySelector('input[name="filt-r"]:checked')?.value || 'all'
                 };
                 const json = JSON.stringify(payload);
                 // 4 MB 초과 시 파일 데이터 제외 (결과는 재실행으로 복원)
@@ -1262,7 +1281,10 @@
                 }
 
                 // 필터 상태 복원
-                if (saved.filterOnly) document.getElementById('filt-cb').checked = true;
+                if (saved.filterRadio) {
+                    const r = document.querySelector(`input[name="filt-r"][value="${saved.filterRadio}"]`);
+                    if (r) r.checked = true;
+                }
 
                 checkReady();
 
@@ -1282,7 +1304,8 @@
             S.results = [];
             document.getElementById('sec-dash').classList.add('hidden');
             document.getElementById('sec-tbl').classList.add('hidden');
-            document.getElementById('filt-cb').checked = false;
+            const allRadio = document.querySelector('input[name="filt-r"][value="all"]');
+            if (allRadio) allRadio.checked = true;
             sessionStorage.removeItem('ev_state');
             checkReady();
         }
@@ -1536,9 +1559,14 @@
 
         /* ══════════════ TABLE ══════════════ */
         function getFilteredRows() {
-            const filtOnly = document.getElementById('filt-cb').checked;
+            const filt = document.querySelector('input[name="filt-r"]:checked')?.value || 'all';
             const q = (document.getElementById('search-inp')?.value || '').trim().toLowerCase();
-            let rows = filtOnly ? S.results.filter(r => r.status !== 'match') : S.results;
+            let rows;
+            if (filt === 'match') rows = S.results.filter(r => r.status === 'match');
+            else if (filt === 'mismatch') rows = S.results.filter(r => r.status === 'mismatch');
+            else if (filt === 'only-a') rows = S.results.filter(r => r.status === 'only-a' || r.status === 'no-biz-a');
+            else if (filt === 'only-b') rows = S.results.filter(r => r.status === 'only-b' || r.status === 'no-biz-b');
+            else rows = S.results;
             if (q) {
                 rows = rows.filter(row => {
                     if (fmtBiz(row.biz).replace(/-/g, '').includes(q.replace(/-/g, ''))) return true;
